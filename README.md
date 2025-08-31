@@ -7,5 +7,11 @@
 ### macOS / Linux
 ```bash
 bash run.sh
-javac -d out src\main\cat\Main.java
-java -cp out cat.Main
+### Windows
+### 2. Windows 命令的路径符号
+Windows 下建议用反斜杠 `\`，否则会让 Windows 用户迷惑。你写的 `src/main/cat/Main.java` 在 Windows 命令行是要写成：
+1. 双击 `run.bat`  
+2. 或手动执行：
+   ```bash
+   javac -d out src\main\cat\Main.java
+   java -cp out cat.Main
